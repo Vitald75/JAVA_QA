@@ -6,7 +6,7 @@
 
 public class task_10 {
     public static void main(String [] args){
-        int randomN = (int) (Math.random() * 6); ; 
+        int randomN = (int) (Math.random() * 6); 
         int fackToReal = 1;
         for (int i=1; i<=randomN; i++) {
             fackToReal = fackToReal * i;
