@@ -27,12 +27,24 @@ public class task_15 {
 
         int maxCount = 0;
         int numberMax = 0;
-        for (int i=0; i<=results.length-1; i++)
-        {
-            if (results[i] == max) {
-                maxCount++; 
-                numberMax = i;
+
+        // реализация через for i=0
+        // for (int i=0; i<=results.length-1; i++)
+        // {
+        //     if (results[i] == max) {
+        //         maxCount++; 
+        //         numberMax = i;
+        //     }
+        // }
+        
+        // реализация через for each 
+        int j = 0;
+        for (int count : results){
+            if ( count == max) {
+                    maxCount++; 
+                    numberMax = j;
             }
+            j++;
         }
 
         if (maxCount==1) {

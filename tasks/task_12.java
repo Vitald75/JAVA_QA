@@ -5,9 +5,17 @@ public class task_12 {
     public static void main(String [] args){
         int [] evenNumbers = new int[6];
         
-        for (int i = 0; i<=5; i++) {
-            evenNumbers[i]= 10 + i*2; 
-        }
+
+         for (int i = 0; i<=5; i++) {
+             evenNumbers[i]= 10 + i*2; 
+         }
+
+        // реализация через foreach  - кривая) 
+        // int j = 0;
+        // for (int elem:evenNumbers) {
+        //     evenNumbers[j] = 10 + j*2; 
+        //     j++;
+        // }
         
         for (int i : evenNumbers)
         {
